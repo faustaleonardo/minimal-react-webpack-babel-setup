@@ -1,6 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+import App from './App';
+
 const title = 'React with webpack and babel';
 
-ReactDOM.render(<div>{title}</div>, document.getElementById('app'));
+ReactDOM.render(<App title={title} />, document.getElementById('app'));
+
+module.hot.accept();
